@@ -1,0 +1,29 @@
+.main-container {
+  background-color: #f5faf7;
+    .sectionTwo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 41px 25px 70px 25px;
+      overflow: hidden;
+      max-width: 1800px;
+      @media (min-width: 768px) {
+        padding: 20px 48px 35px 48px;
+      }
+      @media (min-width: 1200px) {
+        padding: 10px 100px 80px;
+        margin: 0 auto;
+      }
+      .image {
+        display: none;
+        margin-left: -10px;
+        @media (min-width: 768px) {
+          display: inline-flex;
+        }
+        @media (min-width: 1200px) {
+          width: 40%;
+        }
+      }
+    }
+  }
+  

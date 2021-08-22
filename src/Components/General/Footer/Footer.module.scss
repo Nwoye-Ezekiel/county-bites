@@ -1,0 +1,194 @@
+.containerWrapper {
+  background-color: #fff8f6;
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1800px;
+    padding: 25px 25px 53px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 34px 20px 31px 48px;
+    }
+    @media (min-width: 1200px) {
+      padding: 64px 100px 57px;
+      margin: 0 auto;
+    }
+    .logoSection {
+      display: inline-block;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      @media (min-width: 768px) {
+        display: inline-flex;
+        width: 30%;
+        height: 126px;
+        margin-right: 4.27px;
+      }
+      @media (min-width: 1200px) {
+        height: 235px;
+        margin-right: 8px;
+      }
+      .logo {
+        width: 48px;
+        height: 41px;
+        @media (min-width: 768px) {
+          width: 43px;
+          height: 37.19px;
+        }
+        @media (min-width: 1200px) {
+          margin-left: -13px;
+          width: 111px;
+          height: 72px;
+        }
+      }
+      .copyright1 {
+        margin-top: 8px;
+        font-size: 12px;
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+      .copyright2Container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 29.87px;
+        @media (min-width: 1200px) {
+          height: 56px;
+        }
+        .copyright2 {
+          display: none;
+          font-size: 7.5px;
+          line-height: 13px;
+          @media (min-width: 768px) {
+            display: block;
+          }
+          @media (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      .socials1 {
+        display: none;
+        justify-content: space-between;
+        :hover {
+          transition: 0.15s;
+          transform: scale(1.2);
+        }
+        @media (min-width: 768px) {
+          width: 93.87px;
+          display: flex;
+        }
+        @media (min-width: 1200px) {
+          width: 176px;
+        }
+        .social {
+          height: 17px;
+          width: 17px;
+          @media (min-width: 1200px) {
+            height: 32px;
+            width: 32px;
+          }
+        }
+      }
+    }
+
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      :nth-child(4) {
+        @media (min-width: 900px) {
+          display: none;
+        }
+      }
+      @media (min-width: 768px) {
+        width: 70%;
+        margin-right: 56px;
+      }
+      @media (min-width: 1200px) {
+        margin-right: 105px;
+      }
+      .section {
+        margin-top: 32px;
+        width: calc(100% - 50% - 8.5px);
+        @media (min-width: 768px) {
+          margin-top: 0px;
+          width: 100px;
+          margin-right: 38.4px;
+        }
+        @media (min-width: 1200px) {
+          margin-right: 35px;
+          width: 170px;
+        }
+        .header {
+          font-size: 14px;
+          font-family: "gilroy-b";
+          margin-bottom: 2px;
+          font-style: normal;
+          line-height: 30px;
+          color: #242424;
+          @media (min-width: 768px) {
+            font-family: "gilroy-m";
+            font-size: 10.67px;
+            line-height: 16px;
+            margin-bottom: 13px;
+          }
+          @media (min-width: 1200px) {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 24px;
+          }
+        }
+        .links {
+          width: fit-content;
+          .linker {
+            text-decoration: none;
+            :hover {
+              color: #fe4e26;
+            }
+          }
+          .link {
+            font-size: 12px;
+            line-height: 16px;
+            color: #242424;
+            margin-bottom: 10px;
+
+            @media (min-width: 768px) {
+              font-size: 8.53px;
+              line-height: 14px;
+              margin-bottom: 6.4px;
+            }
+            @media (min-width: 1200px) {
+              font-size: 16px;
+              line-height: 26px;
+              margin-bottom: 12px;
+            }
+          }
+        }
+
+        .socials2 {
+          display: flex;
+          flex-direction: column;
+          height: 176px;
+          justify-content: space-between;
+          margin-top: 6px;
+          :hover {
+            transition: 0.15s;
+            transform: scale(1.2);
+          }
+          @media (min-width: 768px) {
+            display: none;
+          }
+          .social {
+            height: 32px;
+            width: 32px;
+          }
+        }
+      }
+    }
+  }
+}

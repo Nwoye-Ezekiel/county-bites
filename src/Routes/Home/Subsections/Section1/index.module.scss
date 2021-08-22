@@ -1,0 +1,42 @@
+.main-container {
+  background-color: #fff8f6;
+  @media (min-width: 768px) {
+    background-color: #ffffff;
+  }
+  @media (min-width: 1200px) {
+    background-color: #fff8f6;
+  }
+  .section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px 60.53px 25px;
+    overflow: hidden;
+    max-width: 1800px;
+    @media (min-width: 768px) {
+      height: 363px;
+      justify-content: space-between;
+      padding: 0 48px 20px 48px;
+    }
+    @media (min-width: 1200px) {
+      height: 675px;
+      padding: 0px 100px 80px;
+      margin: 0 auto
+    }
+    .image {
+      display: none;
+      margin-right: -5px;
+      @media (min-width: 768px) {
+        display: inline-flex;
+      }
+      @media (min-width: 1200px) {
+        width: 40%;
+      }
+    }
+    .layout-container {
+      @media (min-width: 768px) {
+        margin-top: -10%;
+      }
+    }
+  }
+}

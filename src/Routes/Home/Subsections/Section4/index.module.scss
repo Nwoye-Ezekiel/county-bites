@@ -1,0 +1,33 @@
+.main-container {
+  background-color: #ffffff;
+  @media (min-width: 768px) {
+    background-color: #fff8f6;
+  }
+  .sectionFour {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 25px 57.53px 25px;
+    overflow: hidden;
+    max-width: 1800px;
+    @media (min-width: 768px) {
+      padding: 0 48px;
+    }
+    @media (min-width: 1200px) {
+      padding: 0px 100px;
+      margin: 0 auto;
+    }
+    .image {
+      display: none;
+      margin-left: -50px;
+      @media (min-width: 768px) {
+        display: inline-flex;
+      }
+      @media (min-width: 1200px) {
+        width: 45%;
+        margin-left: -100px;
+      }
+    }
+  }
+}

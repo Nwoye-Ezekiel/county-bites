@@ -1,0 +1,51 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 25px 70px 25px;
+  background-color: #ffffff;
+  overflow: hidden;
+  @media (min-width: 768px) {
+    padding: 46px 48px;
+  }
+  @media (min-width: 1200px) {
+    padding: 80px 100px;
+  }
+  h4 {
+    font-family: "gilroy-m";
+    font-size: 30px;
+    color: #242424;
+    font-family: "gilroy-m";
+    margin-bottom: 40px;
+    text-align: center;
+    @media (min-width: 768px) {
+      font-size: 26px;
+      margin-bottom: 55px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 48px;
+    }
+  }
+  .images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .man {
+      display: none;
+      @media (min-width: 768px) {
+        display: inline-flex;
+        margin-right: 35px;
+      }
+      @media (min-width: 1200px) {
+        margin-right: 68px;
+      }
+    }
+    .payment{
+      margin-right: -15px;
+      @media (min-width: 768px) {
+        margin-right: 0;
+      }
+    }
+  }
+}

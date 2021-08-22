@@ -1,0 +1,54 @@
+.main-container {
+  position: relative;
+  background-color: #f5faf7;
+
+  .circle {
+    position: absolute;
+    @media (min-width: 768px) {
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      border: 1px solid #fe4e26;
+      bottom: -250px;
+      right: -150px;
+    }
+    @media (min-width: 1200px) {
+      width: 800px;
+      height: 800px;
+      bottom: -450px;
+      right: -250px;
+    }
+  }
+  .sectionTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 41px 25px 70px 25px;
+    overflow: hidden;
+    max-width: 1800px;
+    @media (min-width: 768px) {
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 50px 48px 35px 48px;
+    }
+    @media (min-width: 1200px) {
+      padding: 80px 100px;
+      margin: 0 auto
+    }
+    .image {
+      display: none;
+      margin-left: -10px;
+      @media (min-width: 768px) {
+        display: inline-flex;
+      }
+      @media (min-width: 1200px) {
+        width: 50%;
+      }
+    }
+    .layout-container {
+      @media (min-width: 768px) {
+        margin-top: 4%;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "gilroy-l";
+  src: url("./font/Gilroy-Light.ttf");
+}
+@font-face {
+  font-family: "gilroy-b";
+  src: url("./font/Gilroy-Bold.ttf");
+}
+@font-face {
+  font-family: "gilroy-m";
+  src: url("./font/Gilroy-Medium.ttf");
+}
+@font-face {
+  font-family: "gilroy-r";
+  src: url("./font/Gilroy-Regular.ttf");
+}
+@font-face {
+  font-family: "gilroy-h";
+  src: url("./font/Gilroy-Heavy.ttf");
+}
+body {
+  font-family: "gilroy-r", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  width: fit-content;
+}

@@ -1,0 +1,28 @@
+.main-container {
+  background-color: #ffffff;
+  .sectionThree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 25px 50px 25px;
+    overflow: hidden;
+    max-width: 1800px;
+    @media (min-width: 768px) {
+      padding: 40px 48px 30px 48px;
+    }
+    @media (min-width: 1200px) {
+      padding: 80px 100px;
+      margin: 0 auto;
+    }
+    .image {
+      display: none;
+      margin-left: -10px;
+      @media (min-width: 768px) {
+        display: inline-flex;
+      }
+      @media (min-width: 1200px) {
+        width: 45%;
+      }
+    }
+  }
+}
