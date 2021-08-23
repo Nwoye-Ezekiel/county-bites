@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import styles from "./Nav.module.scss";
 import Logo from "../../../Icons/logo.svg";
@@ -8,9 +8,20 @@ import Calling from "../../../Icons/Calling.svg";
 import { Link } from "react-router-dom";
 
 function Nav() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth - windowWidth * 0);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
   let body = document.body,
     html = document.documentElement;
-
   const location = useLocation();
   const history = useHistory();
   const [toggle, setToggle] = useState(false);
@@ -23,10 +34,12 @@ function Nav() {
       scroll();
     }
   }
+  
   function noScroll() {
     html.style.cssText = "overflow:hidden;height:100%;";
     body.style.cssText = "overflow:hidden;height:100%;";
   }
+
   function scroll() {
     body.style.cssText = "overflow:auto;height:auto;";
     html.style.cssText = "overflow:auto;height:auto;";
