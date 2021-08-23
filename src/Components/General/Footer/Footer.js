@@ -23,16 +23,32 @@ function Footer() {
 
           <div className={styles.section}>
             <div className={styles.socials1}>
-              <a href="https://www.instagram.com/countybites/?hl=en">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/countybites/?hl=en"
+              >
                 <img className={styles.social} src={Instagram} alt="" />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=100069734265780">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.facebook.com/profile.php?id=100069734265780"
+              >
                 <img className={styles.social} src={Facebook} alt="" />
               </a>
-              <a href="https://twitter.com/CountyBites">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/CountyBites"
+              >
                 <img className={styles.social} src={Twitter} alt="" />
               </a>
-              <a href="https://www.linkedin.com/company/county-bites">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/company/county-bites"
+              >
                 <img className={styles.social} src={LinkedIn} alt="" />
               </a>
             </div>
@@ -105,16 +121,32 @@ function Footer() {
 
           <div className={styles.section}>
             <div className={styles.socials2}>
-              <a href="https://www.instagram.com/countybites/?hl=en">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/countybites/?hl=en"
+              >
                 <img className={styles.social} src={Instagram} alt="" />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=100069734265780">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.facebook.com/profile.php?id=100069734265780"
+              >
                 <img className={styles.social} src={Facebook} alt="" />
               </a>
-              <a href="https://twitter.com/CountyBites">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/CountyBites"
+              >
                 <img className={styles.social} src={Twitter} alt="" />
               </a>
-              <a href="https://www.linkedin.com/company/county-bites">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/company/county-bites"
+              >
                 <img className={styles.social} src={LinkedIn} alt="" />
               </a>
             </div>
